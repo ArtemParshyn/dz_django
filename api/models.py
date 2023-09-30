@@ -9,5 +9,5 @@ class Storage(models.Model):
 
 
 class Good(models.Model):
-    quantity = models.PositiveIntegerField()
-    hotel = models.ForeignKey(Storage, related_name='storage', on_delete=models.CASCADE)
+    name = models.CharField(max_length=120)
+    #quantity = models.PositiveIntegerField()
